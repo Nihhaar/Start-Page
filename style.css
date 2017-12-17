@@ -5,27 +5,27 @@
 	font-style: normal;
 	font-weight: normal;
 }
+
 @font-face {
 	font-family: 'fira';
 	src:  url('FiraCode-Light.ttf') format('ttf'),
 	local('FiraCode-Light');
 	font-style: normal;
 	font-weight: lighter;
-
 }
 
 
 html, body{
 	margin: 0;
 	padding: 0;
-	background-color: #141516;
-	color: #FFFFFF;
+	background-color: #2E3440;
+	color: #5E81AC;
 	font-size: 14px;
 }
 
 * {
 	font-family: 'fira';
-	font-weight: lighter;
+	font-weight: bold;
 }
 
 #container {
@@ -44,12 +44,31 @@ html, body{
 	-webkit-box-shadow: 1px 1px 20px 0px #000;
 	-moz-box-shadow: 1px 1px 20px 0px #000;
 	box-shadow: 1px 1px 20px 0px #000;
-	background-color: #282a36;
+	background-color: #D8DEE9;
 	margin: 4px;
 	padding: 8px;
-	border: 5px solid #282a36;
+	border: 5px solid #D8DEE9;
 }
 
+h3 {
+	font-size: 14px;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+form {
+	display: inline;
+}
+
+input 	{
+	display: inline;
+	background: none;
+	border: none;
+	color: #BF616A;
+	width: 70%;
+	font-size: 14px;
+}
 
 #links {
 	display: -moz-box;
@@ -65,8 +84,8 @@ html, body{
 	-webkit-box-flex: 1;
 	margin: 4px;
 	padding: 8px 8px 8px 8px;
-	background-color: #282a36;
-	border: 5px solid #282a36;
+	background-color: #D8DEE9;
+	border: 5px solid #D8DEE9;
 }
 
 .linksbox h3 {
@@ -76,62 +95,34 @@ html, body{
 .linksbox a{
 	display: block;
 	text-decoration: none;
-	font-weight: bold;
 }
 
-.linksbox a.cyan:hover {
-	color: #4babdb;
+.linksbox a.general{
+	color: #C37318;
+	padding: 0;
+}
+
+.linksbox a.general:hover{
+	color: #75450E;
 	text-decoration: underline;
 }
 
-.linksbox a.red:hover {
-	color: #ff5c57;
+.linksbox a.reddit{
+	color: #34961E;
+	padding: 0;
+}
+
+.linksbox a.reddit:hover{
+	color: #1F5A12;
 	text-decoration: underline;
 }
 
-h3 {
-	font-size: 14px;
-	padding-bottom: 0;
-	margin-bottom: 0;
-	margin-top: 0;
-}
-
-.cyan {
-	color: #9aedfe;
+.linksbox a.univ{
+	color: #4C4CF3;
 	padding: 0;
 }
 
-.blue {
-	color: #57c7ff;
-	padding: 0;
-}
-
-.green {
-	font-weight: bold;
-	padding: 0;
-	color: #5af78e;
-}
-
-.pink {
-	padding: 0;
-	color: #ff6ac1;
-}
-
-.red {
-	padding: 0;
-	color: #ff5c57;
-}
-
-form {
-	display: inline;
-}
-
-input 	{
-	display: inline;
-	background: none;
-	display: inline;
-	border: none;
-	color: #FFF;
-	width: 70%;
-	font-size: 14px;
+.linksbox a.univ:hover{
+	color: #2D2D91;
+	text-decoration: underline;
 }
